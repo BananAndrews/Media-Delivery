@@ -241,7 +241,7 @@
     allProjects.forEach(function(p, i) {
       var opt = document.createElement('option');
       opt.value = i;
-      opt.textContent = p.name;
+      opt.textContent = p.name + (p.type ? ' (' + p.type + ')' : '');
       elProjectSelect.appendChild(opt);
     });
     showState('state-form');
